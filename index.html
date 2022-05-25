@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Code Bar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='JsBarcode.all.min.js'></script>
+</head>
+<body>
+<svg id="barcode"></svg>
+    
+</body>
+
+
+</html>
+<script type="text/javascript">
+    let DNS = '8908995'
+        JsBarcode("#barcode", DNS, {
+        format: "codabar",
+        lineColor: "#000",
+        width: 1.8,
+        height: 40,
+        displayValue: true
+        });
+</script>
